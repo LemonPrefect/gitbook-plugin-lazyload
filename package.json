@@ -39,7 +39,7 @@
     "copy:lazyload": "copyfiles -f node_modules/lazyload.js/lazyload.min.js dist/assets/js"
   },
   "publishConfig": {
-    "registry": "http://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "dist"
