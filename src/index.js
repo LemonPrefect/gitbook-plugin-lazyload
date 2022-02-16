@@ -1,4 +1,5 @@
 /* This file is modified based on @vongola12324's github-plugin-lightbox */
+
 const cheerio = require('cheerio');
 
 const generateLazyLoadByElement = (img) => {
@@ -17,14 +18,13 @@ const getAssets = () => {
       'js/lazyload.min.js'
     ],
     css: [
-      'css/lightbox.min.css',
     ],
   };
   return assets;
 };
 
 const generateLazyLoadConfigScript = () => {
-  return `<script>lazyload()</script>`;
+  return `<script>try{lazyload();}catch(e){;}window.addEventListener("DOMContentLoaded", function() {lazyload();})</script>`;
 };
 
 module.exports = {

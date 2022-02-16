@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-lazyload",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": " A gitbook plugin to lazyload image inspired by lightbox.",
   "main": "dist/index.js",
   "repository": "https://github.com/LemonPrefect/gitbook-plugin-lazyload.git",
@@ -30,13 +30,13 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "gitbook-cli": "^2.3.2",
-    "lazyload.js": "^1.0.2"
+    "lazyload": "^2.0.0-rc.2"
   },
   "scripts": {
     "lint": "eslint src/*.js",
     "build": "npm run babel && npm run copy:lazyload",
     "babel": "babel src --out-dir dist --presets=@babel/env",
-    "copy:lazyload": "copyfiles -f node_modules/lazyload.js/lazyload.min.js dist/assets/js"
+    "copy:lazyload": "copyfiles -f node_modules/lazyload/lazyload.min.js dist/assets/js"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
