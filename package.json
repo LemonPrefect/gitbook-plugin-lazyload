@@ -1,7 +1,7 @@
 {
   "name": "gitbook-plugin-lazyload",
   "version": "0.1.0",
-  "description": " A gitbook plugin to lazyload image.",
+  "description": " A gitbook plugin to lazyload image inspired by lightbox.",
   "main": "dist/index.js",
   "repository": "https://github.com/LemonPrefect/gitbook-plugin-lazyload.git",
   "author": "LemonPrefect <me@lemonprefect.cn>",
@@ -44,13 +44,5 @@
   "files": [
     "dist"
   ],
-  "gitbook": {
-    "properties": {
-      "jquery": {
-        "type": "boolean",
-        "default": true,
-        "description": "If you don't want to use plugin built-in jquery, set it to false."
-      }
-    }
-  }
+  "gitbook": {}
 }

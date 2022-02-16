@@ -1,3 +1,4 @@
+/* This file is modified based on @vongola12324's github-plugin-lightbox */
 const cheerio = require('cheerio');
 
 const generateLazyLoadByElement = (img) => {
